@@ -1,0 +1,439 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 55px;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 23px
+}
+h5{
+    font-size: 15px;
+}
+
+p{
+    font-size: 13.5px;
+}
+.navbar{
+  background: linear-gradient(45deg, #00504f, #00bbc1); 
+  height: 50px;
+  box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+
+}
+.nav-link{
+  margin: 4px 20px;
+  color: white !important;
+  font-size: 12px;
+  font-weight: 300;
+}
+.nav-link:hover{
+  color: white!important;
+  border: 1px dashed white;
+
+  padding: 5px 25px;
+  transition: .4s ease-in-out;
+}
+.ul-class{
+  background: transparent;
+  border: none;
+}
+
+
+
+/* Start SideBar */
+#sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(45deg, #00504f, #00bbc1); 
+  left: -250px;
+  transition: 0.5s;
+  z-index: 9;
+}
+
+#sidebar.active{
+  left: 0px;
+}
+#sidebar ul{
+  margin-top: 30px;
+}
+#sidebar ul li{
+  list-style-type: square;
+  padding: 20px  0px;
+  list-style-type: none ;
+border-bottom: 1px dashed white;
+}
+#sidebar ul li:hover{
+  border-right: 5px solid white;
+}
+#sidebar ul li a{
+  color: white;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+}
+#sidebar ul li a:hover{
+  color:  black;
+  
+}
+
+#sidebar .toggle-btn{
+  position: absolute;
+  top: 30px;
+  left: 260px;
+}
+.toggle-btn span{
+  width: 20px;
+  height: 3px;
+  background: black;
+  display: block;
+  margin-top:4px;
+
+
+}
+
+/* End SideBar */
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd url("../img/bg2.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h2 {
+  color: black;
+  margin-bottom: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size:  42px;
+  font-weight: 700;
+
+}
+
+#intro .intro-info h2 span {
+  color: black;
+}
+
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+}
+
+#intro .intro-info .btn-get-started:hover,
+#intro .intro-info .btn-services:hover {
+  background: #0a98c0;
+}
+
+.social-links{
+  display: flex;
+  position: relative;
+  margin-left:-20px;
+}
+.social-links li{
+  list-style-type: none;
+}
+
+ .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: transparent;
+  color: black;
+  outline: none;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px; 
+  background-color: white;
+  transition: .4s ease-in-out;
+}
+.social-links li a:hover{
+  color: white;
+  background-color: black;
+}
+.bg-abt{
+  background: linear-gradient(45deg, #00504f, #00bbc1); 
+}
+.bg-abt h4{
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+.bg-abt p{
+  color: white;
+  text-align: justify;
+  
+}
+.abt-link{
+  
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid white;
+  font-size: 10px;
+        
+   
+}
+.abt-link:hover{
+  background: white;
+  color: black;
+}
+
+
+
+
+/* Why Choose Us Section */
+.H-why{
+  color: #0c7270;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+ 
+.box{
+  position: relative;
+  background: #fff;
+  padding: 100px 40px 60px;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+.box:before{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #086664, #00bbc1); 
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.box:hover::before{
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.box h2{
+  position: absolute;
+  left: 40px;
+  top: 75px;
+  font-size: 4em;
+  z-index: 1;
+  font-weight: 800;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+ .box:hover h2{
+  opacity: 1;
+  color: #fff;
+  transform: translateY(-40px);
+}
+.box h3{
+  position: relative;
+  font-size: 1.7em;
+  font-weight: 300;
+  z-index: 2;
+  color: #0c7270;
+  transition: 0.5s;
+
+}
+.box p{
+  position: relative;
+  z-index: 2;
+  color: #555;
+  transition: 0.5s;
+  text-align: justify;
+}
+.box:hover h3,
+.box:hover p
+{
+  color: #fff;
+}
+/* End why Choose Us Section */
+
+
+
+.bg-web{
+  background-color: #99caff;
+}
+.bg-web h4{
+  color: white;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+.bg-web p{
+  
+  text-align: justify;
+}
+
+
+
+.album-sec{
+  background: #079ca1;
+
+}
+.heading{
+  margin: 3%;
+}
+.heading h2{
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.single-album{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem .5rem rgba(0,0,0,.5);
+}
+.album-img{
+  position: relative;
+  overflow: hidden;
+}
+.album-img img{
+  width: 100%;
+  transition: .4s;
+}
+.single-album:hover  .album-img img
+{
+ transform: scale(1.4,1.4);
+}
+.album-content{
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  transition: all .4s;
+  background: white;
+}
+
+.single-album:hover  .album-content{
+  height: 100px;
+  background: #079ca1;
+  color: white;
+}
+.album-info
+{
+  transition: all .5s;
+}
+.album-info h3{
+  font-size: 15px;
+  color: #0c7270;
+  margin: 5px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  
+}
+.single-album:hover  .album-info h3{
+  color: white;
+}
+.single-album:hover  .album-info p{
+  color: white;
+}
+.album-info p{
+  color: #0c5554;
+  margin-top: 15px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+
+}
+.album-text{
+  color: #fff;
+  padding: 0 10px 6px;
+}
+
+.bg-temp p{
+  text-align: justify;
+  color: #0c5554;
+}
+.btn-temp{
+  color: black;
+  padding: 5px 15px;
+  border: 1px solid black;;
+  outline: none;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+}
+.btn-temp:hover{
+  color: white;
+  background-color: black;
+}
+.bg-footer{
+  background: linear-gradient(45deg, #00504f, #00bbc1); 
+}
+.bg-footer h2{
+  font-size: 37px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+
+}
+
+.social-links-2{
+  display: flex;
+  position: center;
+  margin-right: 5px;
+}
+.social-links-2 li{
+  list-style-type: none;
+}
+
+ .social-links-2 a {
+  font-size: 18px;
+  display: inline-block;
+  background: transparent;
+  color: black;
+  outline: none;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px; 
+  background-color: white;
+  transition: .4s ease-in-out;
+
+}
+.social-links-2 li a:hover{
+  color: white;
+  background-color: black;
+  
+}
+.btn-footer{
+  padding: 7px 28px; 
+  color: white;
+  border: 1px solid white;
+  transition: .4s ease-in-out;
+}
+.btn-footer:hover{
+  background-color: white;
+  color: black;
+
+}
